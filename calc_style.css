@@ -41,3 +41,11 @@ body {
     font-size: 20px;
     color: white;
 }
+
+.calc {
+    margin-top: 200px;
+}
+
+.calc_label {
+    color: white;
+}

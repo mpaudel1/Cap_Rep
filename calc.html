@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="assist_style.css">
+        <link rel="stylesheet" href="calc_style.css">
         <script src="mainscript.js"></script>
         <title>Finance and Credit Assistance</title>
     </head>
@@ -19,7 +19,23 @@
                     <li><a href="form.html" class="nav-link description">Survey</a></li>
                 </ul>
             </div>
+           
+            <div class="calc">
+                <label for="current_balance" class="calc_label">Enter Current Balance</label>
+                <input type="number" placeholder="0" class="calc_input" id="curr_bal">
 
+                <label for="amount_owed" class="calc_label">Enter Amount Owed</label>
+                <input type="number" placeholder="0" class="calc_input" id="amm_owed">
+
+                <label for="interest_rate" class="calc_label">Enter  Interest Rate</label>
+                <input type="number" placeholder="0" class="calc_input" id="int_rate">
+
+                <label for="time" class="calc_input">Enter the amount of time you have to pay this off (years)</label>
+                <input type="number" placeholder="0" class="calc_input" id="time_yrs">
+
+                <button id="btn1">Do</button>
+            </div>
+            
         </div>
     </body>
 </html>
