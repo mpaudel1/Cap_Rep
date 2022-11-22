@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="login_style.css">
+        <script src="login.js"></script>
+        <title>Login Page</title>
+    </head>
+    <body>  
+        <div class="container">
+
+            <div class="nav-bar">
+                <a href="home.html" class="nav-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Cartoon_space_rocket.png"
+                    class="fit-img">
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="fin_assist.html" class="nav-link description">Finance Assistance</a></li>
+                    <li><a href="list.html" class="nav-link description">List</a></li>
+                    <li><a href="calc.html" class="nav-link description">Debt Calculator</a></li>
+                    <li><a href="form.html" class="nav-link description">Survey</a></li>
+                    <li><a href="login.html" class="nav-link description">Login</a></li>
+                </ul>
+            </div>
+            
+            <div class="margin_top login_page center-elem">
+                <h2 class="center-txt">
+                    Login
+                </h2>
+
+                <input type="email" name="login_email" class="center-elem" id="login_email" placeholder="email">
+                <input type="password" name="login_password" class="center-elem" id="login_password" placeholder="password">
+                <br></br>
+
+                <div class="flex jc">
+                    <button class="button margin_right" id="login_button">Login</button>
+                    <button onclick="window.location='register.html'" class="button" id="register_button">Don't have an account? Register!</button>
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+</html>
