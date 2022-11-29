@@ -4,13 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="list_style.css">
+        <script src="list_script.js"></script>
         <title>List</title>
     </head>
     <body>  
         <div class="container">
 
             <div class="nav-bar">
-                <a href="home.html" class="nav-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Cartoon_space_rocket.png"
+                <a href="home.html" class="nav-brand"><img src="gotta_blast.png"
                     class="fit-img">
                 </a>
                 <ul class="nav-menu">
@@ -22,30 +23,43 @@
                 </ul>
             </div>
             <div class="form">
-                <form action="results.html"method='GET'>
+                <form action="list.html"method='POST'>
                     <div class="">
                         <label>
                             Budget
-                            <input type="text" name="budget" placeholder="Budget" >
+                            <input id='budget' type="text" name="budget" placeholder="Budget" >
                         </label>
                     </div>
                     <div class="">
                         <label>
                             Product
-                            <input type="text" name="p1" placeholder="Product" >
+                            <input id='p1' type="text" name="p1" placeholder="Product" >
                         </label>
                         <label>
                             Quantity
-                            <input type="text" name="p1_quantity" placeholder="Cost" >
+                            <input id='p1_quantity' type="text" name="p1_quantity" placeholder="Cost" >
                         </label>
                         <label>
                             Cost
-                            <input type="text" name="p1_cost" placeholder="Cost" >
+                            <input id='p1_cost' type="text" name="p1_cost" placeholder="Cost" >
                         </label>
                         <label>
-                            Remaining Balance
-                            <input type="text" name="p1_rembalance" placeholder="Remaining Balance" >
+                            <input type="button" id="btn1" value="click me">
                         </label>
+                        <p id='output'></p>
+                        <script>
+                        const chromosome = document.getElementById('p1');
+                        const bt1 = document.getElementById('')
+                        const out1 = document.getElementById('output');
+                        
+                        function test(){
+                        out1.innerHTML = chromosome;
+                        }
+                        
+                      </script>
+                        
+                        <button type="submit" onclick="budget()">Calculate budget after 1st Product</button>
+                        <p id='p1_rembalance' type="text" name="p1_rembalance"><
                     </div>
                 </form>
             </div>
